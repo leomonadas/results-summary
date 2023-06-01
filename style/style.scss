@@ -1,0 +1,50 @@
+// ### Primary
+$primary-red: hsl(0, 100%, 67%);
+$primary-yellow: hsl(39, 100%, 56%);
+$primary-green:  hsl(166, 100%, 37%);
+$primary-blue: hsl(234, 85%, 45%);
+
+// ## Gradients
+$gradient-slate: hsl(252, 100%, 67%);
+$gradient-royal: hsl(241, 81%, 54%);
+$gradient-violet:hsla(256, 72%, 46%, 1);
+$gradient-persian:hsla(241, 72%, 46%, 0);
+
+// ### Neutral
+$color-white:hsl(0, 0%, 100%);
+$color-pale-blue:hsl(221, 100%, 96%);
+$color-lavender:hsl(241, 100%, 89%);
+$color-dark-gray:hsl(224, 30%, 27%);
+
+body{
+    background-color: $color-pale-blue;
+}
+.results{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__card{
+        border-radius: 32px;
+        width: 720px;
+        box-sizing: border-box;
+        display: flex; 
+        background-color: $color-white;
+            @media screen and (max-width:768px) {
+                flex-direction: column;
+            }
+            .bg-purple{
+                box-sizing: border-box;
+                width: 50%;
+                padding: 40px 54px;
+                border-radius: 32px;
+                background:  linear-gradient(180deg, $gradient-slate 0%, $gradient-violet 0.01%, $gradient-royal 100%);
+                text-align: center;
+            }
+            .bg-white{
+                box-sizing: border-box;
+                padding: 40px 54px;
+            }
+    }
+}

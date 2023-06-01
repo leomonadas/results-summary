@@ -1,0 +1,36 @@
+body {
+  background-color: hsl(221, 100%, 96%);
+}
+
+.results {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.results__card {
+  border-radius: 32px;
+  width: 720px;
+  box-sizing: border-box;
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+}
+@media screen and (max-width: 768px) {
+  .results__card {
+    flex-direction: column;
+  }
+}
+.results__card .bg-purple {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 40px 54px;
+  border-radius: 32px;
+  background: linear-gradient(180deg, hsl(252, 100%, 67%) 0%, hsl(256, 72%, 46%) 0.01%, hsl(241, 81%, 54%) 100%);
+  text-align: center;
+}
+.results__card .bg-white {
+  box-sizing: border-box;
+  padding: 40px 54px;
+}
+
+/*# sourceMappingURL=style.css.map */
